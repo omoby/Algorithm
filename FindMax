@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int FindMax(int *a,int n)
+{
+   int Max=a[0];
+   for(int i=1;i<n;i++)
+       if(a[i]>Max)
+          Max=a[i];
+   return  Max;
+}
+int main()
+{
+  int array_num;
+  cin>>array_num;
+  int *array=new int[array_num];
+  int i;
+  for(i=0;i<array_num;i++)
+      cin>>array[i];
+  int M=FindMax(array,n);
+  cout<<M<<endl;
+  delete[]array;
+  system("pasue");
+  return 0;
+}
+       
